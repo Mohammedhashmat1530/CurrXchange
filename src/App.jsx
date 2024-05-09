@@ -26,14 +26,19 @@ function App() {
   }
 
   return (
+    <>
+    
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        className="h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat gap-1"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1714722473709-4f1002b45c87?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
         
         }}
     >
-        <div className="w-full">
+    
+        <div className="w-full flex flex-wrap justify-center items-center flex-col">
+        <h3 className='text-white text-3xl pb-4 font-medium '>CurrX<span className='text-red-500'>Change</span></h3>
+        <p className='text-white text-2xl pb-10 font-normal tracking-wide'>Don't Get Swindled,<span className='text-red-900'>Get Converted</span> </p>
             <div className="w-full max-w-lg    mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
@@ -82,6 +87,7 @@ function App() {
             </div>
         </div>
     </div>
+    </>
 );
 }
 
